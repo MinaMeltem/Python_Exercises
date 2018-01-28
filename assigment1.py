@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
+#SIMPLE RESTAURANT BILL CALCULATOR
 
 # Asking user to enter the price
 meal = float(input("Enter the price: "))
