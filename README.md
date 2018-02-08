@@ -1,1 +1,1 @@
-Some Practice Codes in Pyhton
+Practice Code in Pyhton
