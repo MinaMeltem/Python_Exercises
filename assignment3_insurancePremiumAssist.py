@@ -2,13 +2,13 @@
 """
 @author: MEL
 """
- # Monthly premium cost for a var
-def insurance_premium():
-    age = int(input("Please Enter your age: "))    
-    # starting cost = $50    
+ # Vehicle Monthly premium cost 
+def insurance_premium():   
     starting_cost = 50;
 
     # Monthly premium due to age 
+    age = int(input("Please Enter your age: "))  
+    
     if age > 18:  
         if age <= 25:
             age_cost = 100
@@ -39,11 +39,8 @@ def insurance_premium():
     else:
         print ("You are too young to drive")
         
-    
-       
 
-insurance_premium()  
-
+insurance_premium()
 
 
 
