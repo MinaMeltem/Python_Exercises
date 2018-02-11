@@ -1,16 +1,18 @@
-# -*- coding: utf-8 -*-
 """
 @author: MEL
 """
 with open ("E:\\Coding_practice\\Python\\input.txt" , 'r') as f:
     content = f.readlines()
+f.close()
     
 tickets = {} 
 total = 0
 lenght = 0   
+
 for line in content:
     ID = line.split(" ")[0]
-    price = float(line.split(" ")[1])    
+    price = float(line.split(" ")[1])  
+    
     if ID not in tickets:
         tickets[ID] = price
     else:
