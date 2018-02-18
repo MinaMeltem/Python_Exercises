@@ -1,19 +1,21 @@
 import collections
  
-#   Args: 
-#       song_list (list): List of the songs in the db
-#  Returns: 
-#       str: The most common song number
+''' Args: 
+       song_list (list): List of the songs in the db
+    Returns: 
+      str: The most common song number
+'''
 
 def popular_song(song_list):
     frequency = collections.Counter(song_list)
     common_song = frequency.most_common(1)[0][0]
     return (common_song)
 
-#   Args: 
-#     user_dict (dict): {'user' : [list of songs]}
-#   Returns: 
-#     str: The most common song , int : average number of songs streamed 
+''' Args: 
+     user_dict (dict): {'user' : [list of songs]}
+    Returns: 
+     str: The most common song , int : average number of songs streamed 
+'''
 def active_user(user_dict):
     new_dict = {} 
     user_counter = 0 # number of users in the dict
@@ -24,9 +26,6 @@ def active_user(user_dict):
         new_dict[users] = len(user_dict[users])  
         song_counter += len(user_dict[users])         
     return (max(new_dict, key=new_dict.get), song_counter/user_counter)
-
-
-
 
     
 with open ("E:\\Coding_practice\\Python\\streaming.txt" , 'r') as f:
