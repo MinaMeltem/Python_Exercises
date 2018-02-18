@@ -41,5 +41,5 @@ Output :
     # of 2 Ratings 3 
     # of 3 Ratings 8 
     # of 4 Ratings 10 
-    Standatd Deviation: 0.946588741612054.
+    Standatd Deviation: 0.947.
 '''
