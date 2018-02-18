@@ -29,7 +29,7 @@ print('# of {} Ratings {} '.format(frequency.most_common(4)[3][0],frequency.most
 print('# of {} Ratings {} '.format(frequency.most_common(4)[2][0],frequency.most_common(4)[2][1]))
 print('# of {} Ratings {} '.format(frequency.most_common(4)[1][0],frequency.most_common(4)[1][1]))
 print('# of {} Ratings {} '.format(frequency.most_common(4)[0][0],frequency.most_common(4)[0][1]))
-print('Standatd Deviation: {}.\n'.format(np.std(_np_vl)))
+print('Standatd Deviation: {0:.3f}'.format(np.std(_np_vl)))
 
 '''
 Output :
